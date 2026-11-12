@@ -1,0 +1,9 @@
+dist
+miniprogram_npm
+coverage
+pnpm-lock.yaml
+node_modules
+sample-*/node_modules
+sample-*/miniprogram_npm
+*.wxml
+*.lock

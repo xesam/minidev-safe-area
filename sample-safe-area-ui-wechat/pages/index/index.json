@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "safe-area-top": "@mini-dev/safe-area-ui/safe-area-top",
+        "safe-area-bottom": "@mini-dev/safe-area-ui/safe-area-bottom",
+        "statusbar-safe-top": "@mini-dev/safe-area-ui/statusbar-safe-top"
+    }
+}

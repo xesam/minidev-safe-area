@@ -1,0 +1,55 @@
+<safe-area-top id="demo-safe-area-top" ext-class="sample-top">
+    <view class="nav-title">safe-area sample</view>
+</safe-area-top>
+
+<view class="page-body" style="{{bodyPadBottom}}">
+    <view class="card">
+        <view class="card-title">关键数值</view>
+        <view class="metric-row" wx:for="{{metricsRows}}" wx:key="name">
+            <view class="metric-main">
+                <text class="metric-name">{{item.name}}</text>
+                <text class="metric-value">{{item.value}}</text>
+            </view>
+            <text class="metric-note">{{item.note}}</text>
+        </view>
+        <text class="card-text raw-json">getSafeAreaInfo(): {{safeAreaText}}</text>
+        <text class="card-text raw-json">getNavBarMetrics(): {{metricsText}}</text>
+    </view>
+    <view class="card">
+        <view class="card-title">顶部占位：两种锚点语义对比</view>
+        <statusbar-safe-top id="demo-statusbar-safe-top" ext-class="demo-pad demo-pad-statusbar">
+            <view class="demo-content">
+                <view class="demo-title">statusbar-safe-top（状态栏锚点）</view>
+                <view class="demo-desc">锚点 statusBarHeight = {{statusBarHeight}}px，无 CSS 等价物，恒由 JS 内联</view>
+            </view>
+        </statusbar-safe-top>
+        <safe-area-top id="demo-compare-safe-area-top" ext-class="demo-pad demo-pad-safearea">
+            <view class="demo-content">
+                <view class="demo-title">safe-area-top（视口遮挡锚点）</view>
+                <view class="demo-desc">锚点 safeArea.top = {{safeAreaTop}}px（{{trackLabel}}）</view>
+            </view>
+        </safe-area-top>
+        <text class="card-text">{{topDiffText}}</text>
+    </view>
+    <view class="card">
+        <view class="card-title">组件示例入口</view>
+        <view class="entry-row" hover-class="row-hover" hover-stay-time="100" bind:tap="onTapNavBar">
+            <text>navigation-bar 组件功能矩阵</text>
+            <text class="entry-arrow">›</text>
+        </view>
+        <view class="entry-row" hover-class="row-hover" hover-stay-time="100" bind:tap="onTapNavBarBase">
+            <text>navigation-bar-base 纯适配壳示例</text>
+            <text class="entry-arrow">›</text>
+        </view>
+        <view class="entry-row" hover-class="row-hover" hover-stay-time="100" bind:tap="onTapNotHome">
+            <text>navigation-bar autoNavIcon 自动判定分支</text>
+            <text class="entry-arrow">›</text>
+        </view>
+    </view>
+</view>
+
+<safe-area-bottom id="demo-safe-area-bottom" ext-class="sample-bottom">
+    <view class="footer-caption">safe-area-bottom：padding-bottom = bottomInset = {{bottomPadValue}}px</view>
+    <button class="recompute-button" type="default" bind:tap="onRecompute">重算窗口数值与本页组件</button>
+    <text class="recompute-note">开发者工具模拟器的「旋转」按钮不派发窗口 resize 事件，旋转后点此手动重算；真机由 onResize 自动重算。</text>
+</safe-area-bottom>

@@ -1,0 +1,25 @@
+.nav-bar-base {
+    --height: 44px;
+}
+
+.nav-bar-base .android-bar {
+    --height: 48px;
+}
+
+.nav-bar-base {
+    overflow: hidden;
+    flex: none;
+}
+
+.nav-bar-base__inner {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: calc(var(--height) + env(safe-area-inset-top));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: env(safe-area-inset-top);
+    width: 100%;
+    box-sizing: border-box;
+}

@@ -1,0 +1,4 @@
+.safe-area-bottom {
+    box-sizing: border-box;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+}

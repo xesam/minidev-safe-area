@@ -1,0 +1,3 @@
+<view class="safe-area-top ext-class mini-class ui-class" style="{{inlineStyle}}">
+    <slot></slot>
+</view>

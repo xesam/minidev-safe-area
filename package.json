@@ -1,0 +1,35 @@
+{
+    "name": "safe-area-monorepo",
+    "version": "0.0.0",
+    "private": true,
+    "description": "@mini-dev 小程序安全区适配 monorepo：safe-area 逻辑库 + safe-area-ui 组件库",
+    "scripts": {
+        "build": "pnpm -r run build",
+        "test": "pnpm -r run test",
+        "lint": "eslint .",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "changeset": "changeset",
+        "version": "changeset version",
+        "publish:all": "pnpm -r --filter './packages/**' publish --no-git-checks",
+        "release": "changeset publish",
+        "prepare": "husky"
+    },
+    "lint-staged": {
+        "*.{js,cjs,mjs,ts,json,wxss,md,yaml,yml}": "prettier --write",
+        "*.{js,cjs,mjs,ts}": "eslint --fix"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.27.11",
+        "@commitlint/cli": "^19.6.0",
+        "@commitlint/config-conventional": "^19.6.0",
+        "@typescript-eslint/eslint-plugin": "^8.18.0",
+        "@typescript-eslint/parser": "^8.18.0",
+        "eslint": "^8.57.1",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.2.10",
+        "prettier": "^3.3.3",
+        "typescript": "^5.6.3"
+    },
+    "license": "MIT"
+}

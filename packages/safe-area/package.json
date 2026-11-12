@@ -1,0 +1,73 @@
+{
+    "name": "@mini-dev/safe-area",
+    "version": "0.0.1",
+    "description": "小程序安全区适配逻辑库：安全区、状态栏、胶囊按钮数值归一（当前支持微信端，支付宝/抖音为规划中的扩展端）",
+    "type": "commonjs",
+    "publishConfig": {
+        "access": "public"
+    },
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "./dist/cjs/index.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/esm/index.d.ts",
+                "default": "./dist/esm/index.js"
+            },
+            "require": {
+                "types": "./dist/cjs/index.d.ts",
+                "default": "./dist/cjs/index.js"
+            }
+        }
+    },
+    "miniprogram": "dist/cjs/index.js",
+    "sideEffects": false,
+    "engines": {
+        "node": ">=16"
+    },
+    "directories": {
+        "src": "src",
+        "test": "tests"
+    },
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "rimraf dist && tsdown",
+        "dev": "tsdown --watch",
+        "clean": "rimraf dist",
+        "typecheck": "tsc --noEmit",
+        "prepublishOnly": "npm run build",
+        "test": "jest",
+        "test:dist": "node tests/dist-smoke.cjs"
+    },
+    "keywords": [
+        "miniprogram",
+        "小程序",
+        "wechat",
+        "safe-area",
+        "安全区"
+    ],
+    "author": "xesam",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xesam/minidev-safe-area.git",
+        "directory": "packages/safe-area"
+    },
+    "bugs": {
+        "url": "https://github.com/xesam/minidev-safe-area/issues"
+    },
+    "homepage": "https://github.com/xesam/minidev-safe-area/tree/main/packages/safe-area#readme",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^29.5.13",
+        "@types/node": "^24",
+        "esbuild": "^0.27.0",
+        "jest": "29.7.0",
+        "rimraf": "^6.0.0",
+        "tsdown": "^0.23.7",
+        "typescript": "^5.6.3"
+    }
+}

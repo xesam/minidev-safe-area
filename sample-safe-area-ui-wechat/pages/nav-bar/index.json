@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "navigation-bar": "@mini-dev/safe-area-ui/navigation-bar"
+    }
+}

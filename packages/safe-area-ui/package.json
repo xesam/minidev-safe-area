@@ -1,0 +1,48 @@
+{
+    "name": "@mini-dev/safe-area-ui",
+    "version": "0.0.1",
+    "description": "小程序安全区与导航栏组件库：safe-area-top / safe-area-bottom 安全区容器 + navigation-bar / navigation-bar-base 导航栏组件，适配数据来自 @mini-dev/safe-area",
+    "publishConfig": {
+        "access": "public"
+    },
+    "miniprogram": "libs",
+    "main": "libs/index.js",
+    "types": "libs/index.d.ts",
+    "files": [
+        "libs"
+    ],
+    "scripts": {
+        "lint": "eslint libs",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "typecheck": "tsc --noEmit"
+    },
+    "keywords": [
+        "miniapp",
+        "miniprogram",
+        "wechat",
+        "component",
+        "safe-area",
+        "navigation-bar",
+        "安全区",
+        "导航栏"
+    ],
+    "author": "xesam",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xesam/minidev-safe-area.git",
+        "directory": "packages/safe-area-ui"
+    },
+    "bugs": {
+        "url": "https://github.com/xesam/minidev-safe-area/issues"
+    },
+    "homepage": "https://github.com/xesam/minidev-safe-area/tree/main/packages/safe-area-ui#readme",
+    "license": "MIT",
+    "dependencies": {
+        "@mini-dev/safe-area": "^0.0.1"
+    },
+    "devDependencies": {
+        "miniprogram-api-typings": "^2.8.3-1",
+        "typescript": "^5.6.3"
+    }
+}

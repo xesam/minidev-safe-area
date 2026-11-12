@@ -1,0 +1,12 @@
+{
+    "name": "sample-safe-area-ui-wechat",
+    "version": "0.0.0",
+    "private": true,
+    "dependencies": {
+        "@mini-dev/safe-area": "file:../packages/safe-area",
+        "@mini-dev/safe-area-ui": "file:../packages/safe-area-ui"
+    },
+    "overrides": {
+        "@mini-dev/safe-area": "file:../packages/safe-area"
+    }
+}

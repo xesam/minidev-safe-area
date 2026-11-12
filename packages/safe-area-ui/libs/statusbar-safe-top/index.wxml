@@ -1,0 +1,3 @@
+<view class="statusbar-safe-top ext-class mini-class ui-class" style="{{inlineStyle}}">
+    <slot></slot>
+</view>

@@ -1,0 +1,21 @@
+<scroll-view class="scrollarea" scroll-y type="list">
+    <navigation-bar title="AutoNavIcon"
+                    color="black"
+                    background="#f5f5f5"
+                    bindback="back"
+                    bindhome="home"
+                    auto-nav-icon/>
+    <navigation-bar title="only home"
+                    back="{{false}}"
+                    home-button="{{true}}"
+                    color="black"
+                    background="#f5f5f5"
+                    bindback="back"
+                    bindhome="home"/>
+    <navigation-bar title="only back"
+                    back="{{true}}"
+                    color="black"
+                    background="#f5f5f5"
+                    bindback="back"
+                    bindhome="home"/>
+</scroll-view>

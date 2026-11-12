@@ -1,0 +1,34 @@
+{
+    "appid": "your_appid",
+    "libVersion": "3.0.2",
+    "compileType": "miniprogram",
+    "setting": {
+        "es6": true,
+        "nodeModules": true,
+        "packNpmManually": false,
+        "packNpmRelationList": [],
+        "postcss": false,
+        "compileWorklet": false,
+        "minified": false,
+        "uglifyFileName": false,
+        "uploadWithSourceMap": true,
+        "enhance": false,
+        "minifyWXSS": true,
+        "minifyWXML": true,
+        "localPlugins": false,
+        "disableUseStrict": false,
+        "useCompilerPlugins": false,
+        "condition": false,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        }
+    },
+    "simulatorPluginLibVersion": {},
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
+    "editorSetting": {}
+}

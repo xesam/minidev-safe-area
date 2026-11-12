@@ -1,0 +1,158 @@
+.sample-top {
+    background-color: #07c160;
+}
+
+.nav-title {
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.page-body {
+    padding: 16px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    word-break: break-all;
+    color: #666666;
+    font-size: 12px;
+}
+
+.raw-json {
+    display: block;
+    margin-top: 8px;
+    font-size: 11px;
+    color: #999999;
+}
+
+.metric-row {
+    padding: 6px 0;
+    border-bottom: 1rpx solid #f0f0f0;
+}
+
+.metric-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metric-name {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.metric-value {
+    font-size: 12px;
+    font-weight: bold;
+    color: #07c160;
+}
+
+.metric-note {
+    display: block;
+    margin-top: 2px;
+    font-size: 10px;
+    color: #999999;
+}
+
+.demo-pad {
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.demo-pad-statusbar {
+    background-color: #dbeafe;
+}
+
+.demo-pad-safearea {
+    background-color: #dcfce7;
+}
+
+.demo-content {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.demo-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.demo-desc {
+    margin-top: 4px;
+    font-size: 11px;
+    color: #666666;
+}
+
+.entry-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    font-size: 14px;
+    color: #333333;
+}
+
+.row-hover {
+    background-color: #f5f5f5;
+}
+
+.recompute-button {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.recompute-button::after {
+    border: none;
+}
+
+.recompute-note {
+    display: block;
+    margin: 0 8px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.entry-row + .entry-row {
+    border-top: 1rpx solid #eeeeee;
+}
+
+.entry-arrow {
+    color: #cccccc;
+}
+
+.sample-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+}
+
+.footer-caption {
+    padding: 8px 16px 0;
+    font-size: 12px;
+    line-height: 17px;
+    color: #999999;
+}

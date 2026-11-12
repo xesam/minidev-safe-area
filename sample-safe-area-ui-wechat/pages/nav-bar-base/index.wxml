@@ -1,0 +1,13 @@
+<scroll-view class="scrollarea" scroll-y type="list">
+    <nav-bar-base ext-class="demo-bar base1">
+        <view class="row">
+            <view class="left" bind:tap="onTapLeft">Base组件</view>
+            <view class="right" bind:tap="onTapRight">菜单</view>
+        </view>
+    </nav-bar-base>
+    <nav-bar-base ext-class="demo-bar base2">
+        <view class="row">
+            <view class="center">自定义Base组件内容</view>
+        </view>
+    </nav-bar-base>
+</scroll-view>
